@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			const co={
+				name:"first obj",
+				in:10,
+				coo:{
+					name:"second obj",
+					in:101,
+					index:100
+				}
+			}
+			
+			function moreTime(obj){
+				Object.freeze(obj);
+				for(var attr in obj){
+					//console.log(typeof(obj[attr]))
+					if (typeof(obj[attr])=="object") {
+						console.log(typeof(obj[attr]));
+						//Object.freeze(obj[attr]);
+						moreTime(obj[attr]);
+					}
+				}
+			}
+			
+			moreTime(co);
+			co.coo.index=200;
+			co.coo.index2=200;
+			alert(co.coo.index);
+			alert(co.coo.index2);
+		</script>
+	</body>
+</html>

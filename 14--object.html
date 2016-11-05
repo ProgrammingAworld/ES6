@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var ob1={
+				age:10
+			}
+			var ob2={
+				name:"zhangsan"
+			}
+			var ob3={
+				id:1,
+				age:20
+			}
+			//对于重复的属性后面的会覆盖前面的
+			var obx=Object.assign(ob1,ob2,ob3);
+			
+			//注意这里是先value后key，value取得是数组中的值，key取得是数组的下标
+			//key的类型是number
+			[1,2,3].map(function(value,key){
+				console.log(key+" "+value);
+			});
+			[1,2,3].map((value,key)=>{
+				console.log(key+" "+value);
+			});
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

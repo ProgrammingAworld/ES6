@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var age=10;
+			var obj={age};
+			//alert(obj.age);
+			
+			var obj2={
+				age,
+				showAge:()=>{
+					alert(this.age);//this指的是window，输出的是20
+				},
+				showAgEx:function(){
+					alert(this.age);//this指向当前对象，输出10
+				},
+				showAgExx(){
+					alert(this.age);//this指向当前对象，输出10
+				}
+			}
+			age=20;
+			obj2.showAge();
+			obj2.showAgEx();
+			obj2.showAgExx();
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

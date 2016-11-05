@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var map=new Map();
+			map.set("name","zhangsan");
+			map.set("sex","男");
+			//获取键值对的放式
+			/*for(var [key,value] of map){
+				console.log(key+" is "+value);
+			}*/
+			//只获取键的方法
+			/*for(var [key] of map){
+				console.log("key is "+key);
+			}*/
+			for (var [,value] of map) {
+				console.log(value);
+			}
+		</script>
+	</body>
+</html>

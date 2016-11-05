@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			let s=Symbol();
+			//console.log(typeof(s));
+			var s1=Symbol('foo');
+			var s2=Symbol('bar');
+			//console.log(s1.toString()+" "+s2.toString());
+			/*if(s1){
+				alert(1);
+			}else{
+				alert(2);
+			}*/
+			var s3=Symbol("3");
+			console.log(s3.toString());
+		</script>
+	</body>
+</html>

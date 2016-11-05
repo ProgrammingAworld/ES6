@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var s=new Set([1,2,2,53,6,5,6,6,5,5]);
+			console.log(s.size);
+			s.add(3);
+			console.log(s.size);
+			console.log(s.delete(1));
+			console.log(s.size);
+			console.log(s.has(1));
+			s.clear();
+			console.log(s.size);
+			s.add(1);
+			console.log(s.has(1));
+			var arr=[1,2,5,588,46,52,45,1,1,1,1,1];
+			arr=new Set(arr);
+			arr=Array.from(arr);
+			//console.log(arr);
+		</script>
+	</body>
+</html>
